@@ -104,3 +104,7 @@
 
 	</div><!-- end: #sidebar -->
 </div><!-- end: #sidebar-border -->
+<!-- Loading Progress 80% -->
+<script type="text/javascript">
+		$("#loading_bar").animate({width:"80%"});
+</script>

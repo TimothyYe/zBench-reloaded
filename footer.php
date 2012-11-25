@@ -11,4 +11,11 @@
 </div><!--footer-->
 <?php wp_footer(); ?>
 </body>
+
+<script type="text/javascript">
+$("#loading_bar").animate({width:"100%"},function(){
+setTimeout(function(){$("#loading").hide();},1000);
+}); 
+</script>
+
 </html>

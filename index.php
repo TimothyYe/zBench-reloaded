@@ -1,5 +1,9 @@
 <?php get_header(); global $zbench_options; ?>
 <div id="content">
+<!-- Loading Progress 40% -->
+<script type="text/javascript">
+		$("#loading_bar").animate({width:"40%"});
+</script>
 <?php if (have_posts()) : ?>
 	<?php if (is_search()) { ?>
 	<div class="page-title">
@@ -66,5 +70,9 @@ elseif(function_exists('pagenavi')) {
 }
 ?>
 </div><!--content-->
+<!-- Loading Progress 60% -->
+<script type="text/javascript">
+		$("#loading_bar").animate({width:"60%"});
+</script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

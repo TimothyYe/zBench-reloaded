@@ -47,9 +47,28 @@ hr{color:#ddd;background-color:#ddd;height:1px;border:0px;}
 #menus a{-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;-webkit-border-radius:6px 6px 0 0;}
 #menus ul ul a{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
 
+/* Loading progress bar */
+/************load progress bar***************/
+#loading {
+    /*display: none;*/
+    left: 0;
+    position: absolute;
+    top: 0px;
+    height: 51px;
+    width: 100%;
+    z-index: 0;
+}
+
+#loading_bar {
+	height:51px;
+	background: none repeat scroll 0 0 #3F6C18;
+	/* background: none repeat scroll 0 0 #d54e21; */
+	width: 0;
+}
+
 /* #nav */
-#nav{z-index:5;position:relative;height:31px;padding-top:20px;clear:both;background:#454546;}
-#menus{width:700px;height:31px;margin:0 auto;padding-right:260px;font-size:14px;text-shadow:0 1px 0 #000;}
+#nav{z-index:10;position:relative;height:31px;padding-top:20px;clear:both;background:#454546;}
+#menus{z-index:20;width:700px;height:31px;margin:0 auto;padding-right:260px;font-size:14px;text-shadow:0 1px 0 #000;}
 #menus a{border:1px solid #555;border-bottom:none;color:#abaaaa;display:block;line-height:30px;background:#333;padding:0 10px;}
 #menus ul{list-style:none;}
 #menus li{float:left;position:relative;margin-right:8px;}
@@ -73,7 +92,7 @@ hr{color:#ddd;background-color:#ddd;height:1px;border:0px;}
 #menus ul ul ul{left:100%;top:0;}
 
 /* #search */
-#search{box-shadow:2px 2px 5px #333;-moz-box-shadow:2px 2px 5px #333;-webkit-box-shadow:2px 2px 5px #333;position:absolute;background:#565657;right:50%;margin-right:-450px;bottom:-14px;width:230px;height:26px;overflow:hidden;border:1px solid #999;}
+#search{z-index:20;box-shadow:2px 2px 5px #333;-moz-box-shadow:2px 2px 5px #333;-webkit-box-shadow:2px 2px 5px #333;position:absolute;background:#565657;right:50%;margin-right:-450px;bottom:-14px;width:230px;height:26px;overflow:hidden;border:1px solid #999;}
 #search form{padding:0;}
 #search input#s{width:190px;height:14px;background:transparent;border:none;color:#ddd;padding:6px;font-size:12px;}
 #search form input#searchsubmit{cursor:pointer;position:absolute;right:2px;top:0;width:30px;height:26px;padding-left:30px;background:#565657 url('images/search-input-bg.gif') no-repeat right 0;border:none;border-left:1px solid #999;text-indent:-9999px;}
