@@ -14,10 +14,56 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'zbench' ), max( $paged, $page ) );
 	?>
 	</title>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/timothy.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.lazyload.mini.js"></script>
+<script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload({
+             placeholder : "<?php bloginfo('template_directory'); ?>/images/grey.gif",
+             effect: "fadeIn"
+          });
+      });
+</script>
+
+	<?php
+        //判断是否为首页
+        if (is_home()) {
+           $description ="Timothy Space | Timothy的技术博客,原VC源动力站点,关注程序开发,IT技术,VPS技术,Wordpress技术,计算机与互联网,以及生活点滴记录";
+           $keywords ="Timothy,Space,Blog,博客,计算机,互联网,IT技术,VC源动力,DotNet开发,VC开发,DotNET教程,VPS教程,Wordpress";
+           //判断是否为文章页
+         } else if (is_single()) {
+         if ($post->post_excerpt) {
+          $description = $post->post_excerpt;
+         } else {
+         $description = mb_strimwidth(strip_tags(
+         apply_filters('the_content',$post->post_content)
+         ),0,220);
+         }
+         $keywords = "";
+         $tags = wp_get_post_tags($post->ID);
+         foreach ($tags as $tag ) {
+            $keywords = $keywords . $tag->name . ",";
+         }
+        //判断是否为分类页
+        } else if (is_category()) {
+        $description = category_description();
+        }
+        ?>
+	<meta content="<?php echo $keywords; ?>" name="keywords" />
+	<meta content="<?php echo $description; ?>"name="description" />
+
+
 	<?php if ( is_singular() && get_option('thread_comments') ) wp_enqueue_script('comment-reply'); ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" rel="shortcut icon">
 	<?php wp_head(); ?>
+
+	<?php if ( is_singular() ){ /* 只在单个页面加载 */ ?>
+	    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/thickbox/thickbox.css">
+	    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/thickbox/thickbox-compressed.js"></script>
+	<?php } ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="nav">
