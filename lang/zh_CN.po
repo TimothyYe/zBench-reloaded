@@ -35,12 +35,6 @@ msgstr "对不起，没有找到您要的东东，或许下面的内容你感兴
 msgid "Random Posts"
 msgstr "随机文章"
 
-#: 404.php:16
-#: archive.php:54
-#: index.php:47
-msgid "Tag Cloud"
-msgstr "标签云"
-
 #: archive.php:3
 #: index.php:7
 #, php-format
@@ -321,7 +315,11 @@ msgstr "Google+"
 msgid "Recent Posts"
 msgstr "最新文章"
 
-#: sidebar.php:58
+#: sidebar.php:59
+msgid "Sina Weibo"
+msgstr "新浪微博"
+
+#: sidebar.php:65
 msgid "Search by Tags!"
 msgstr "标签云"
 

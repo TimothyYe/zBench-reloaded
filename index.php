@@ -53,8 +53,8 @@
 if(function_exists('wp_page_numbers')) {
 	wp_page_numbers();
 }
-elseif(function_exists('wp_pagenavi')) {
-	wp_pagenavi();
+elseif(function_exists('pagenavi')) {
+	pagenavi();
 } else {
 	global $wp_query;
 	$total_pages = $wp_query->max_num_pages;

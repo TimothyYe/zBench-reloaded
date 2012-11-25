@@ -54,6 +54,22 @@
 		</ul>
 	</div>
 <?php } ?>
+
+	<div class="widget">
+		<h3><?php _e('最近评论', 'zbench'); ?></h3>
+		<div>
+			<ul class="recentcomments">
+			    <?php recent_comments(); ?>
+    			</ul>
+		</div>
+	</div>
+
+	<div class="widget">
+		<h3><?php _e('新浪微博', 'zbench'); ?></h3>
+		<div>
+		    <iframe id="sina_widget_1401699537" style="width:100%; height:350px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1401699537&height=350&skin=wd_01&showpic=1"></iframe>
+		</div>
+	</div>
 	<div class="widget">
 		<h3><?php _e('Search by Tags!', 'zbench'); ?></h3>
 		<div><?php wp_tag_cloud('smallest=9&largest=18'); ?></div>

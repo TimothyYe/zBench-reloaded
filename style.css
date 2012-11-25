@@ -194,9 +194,10 @@ h2.sticky-h2 a{color:#ff4e00;}
 #sidebar .widget input#s{width:190px;height:22px;line-height:22px;padding:0 5px;}
 #sidebar .widget input#searchsubmit{width:65px;}
 /* WP-RecentComments */
-#sidebar ul li.rc-item,#sidebar ul li.rc-navi{background:none;padding:0;margin:3px 0;}
-#sidebar ul li.rc-item div{padding:0;border:none;}
-#sidebar ul li.rc-item .rc-avatar img{border:1px solid #ddd;}
+
+#sidebar .recentcomments img.avatar{width:16px;height:16px;float:left;position:relative;border:1px solid #ddd;margin:0 5px 0 0;padding:1px;}
+#sidebar ul.recentcomments{list-style:none;padding-left:0;}
+#sidebar ul.recentcomments li{margin:5px 0 0;line-height:20px;height:20px;overflow:hidden;}
 
 /* #comments */
 #comments-div{border-top:1px solid #ddd;position:relative;line-height:24px;height:24px;text-shadow:0 1px 0 #f7f7f7,1px 2px 1px #999;text-align:right;margin:0 0 30px;padding:2px 10px;}
@@ -305,3 +306,9 @@ span#comments-addcomment a:hover{color:#4a630f;text-decoration:none;}
 #wp-calendar td#next{text-align:right;padding-top:5px;}
 /* .gallery-caption */
 #content .gallery .gallery-caption{color:#888;font-size:12px;margin:0 0 12px;}
+
+/* PageNavi */
+.page-navi-numbers{line-height:16px;margin:0;padding:3px 5px;text-decoration:none;background:#fff;border-top:2px solid #fff;}
+.page-navi-numbers:hover{border-top:2px solid #ff00a4;}
+.page-navi-current-page,.page-navi-current-page:hover{color:#fff;background:#45b9f6;border-top:2px solid #45b9f6;}
+.page-navi-current-page:hover{border-top:2px solid #00679d;}

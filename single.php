@@ -29,7 +29,16 @@
 		<div id="nav-below">
 			<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&larr;</span> %title' ); ?></div>
 			<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&rarr;</span>' ); ?></div>
-		</div><!-- #nav-below -->					
+		</div><!-- #nav-below -->
+		<div>
+			<h5>你可能也对下列文章感兴趣</h5>
+			<p>
+			<ul>
+				<?php related_posts(); ?>
+			</ul>
+			</p>
+		</div>
+		<br />					
 	</div><!-- END post -->
 	<?php comments_template( '', true ); ?>
 </div><!--content-->
