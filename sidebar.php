@@ -87,6 +87,14 @@
 			<div class="clear"></div>
 		</ul>
 	</div>
+	
+	<div class="widget">
+		<h3><?php _e('文章分类', 'zbench'); ?></h3>
+		<ul>
+			<?php wp_list_categories('show_count=1'); ?>
+		</ul>
+	</div>
+
 	<div class="widget">
 		<h3><?php _e('Meta', 'zbench'); ?></h3>
 		<ul>
