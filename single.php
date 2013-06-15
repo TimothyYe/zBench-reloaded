@@ -17,6 +17,22 @@
 		</div>
 		<div class="clear"></div>
 		<div class="entry">
+			<?php if(!is_home() && !is_paged()) { ?>
+			<p class="ad">
+				<script type="text/javascript">
+					<!--
+						google_ad_client = "ca-pub-2308560106736257";
+						/* ad-content2 */
+						google_ad_slot = "7002675478";
+						google_ad_width = 180;
+						google_ad_height = 150;
+					//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			</p>
+			<?php } ?> 
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page_link"><strong>' . __( 'Pages:', 'zbench' ) . '</strong>' , 'after' => '</div>' ) ); ?>
 		</div><!-- END entry -->

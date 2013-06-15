@@ -56,6 +56,22 @@
 <?php } ?>
 
 	<div class="widget">
+		<p class="ad">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2308560106736257";
+/* sidebar-200 */
+google_ad_slot = "6597219474";
+google_ad_width = 200;
+google_ad_height = 200;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		</p>
+	</div>
+	
+	<div class="widget">
 		<h3><?php _e('最近评论', 'zbench'); ?></h3>
 		<div>
 			<ul class="recentcomments">

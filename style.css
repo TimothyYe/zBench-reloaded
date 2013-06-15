@@ -127,6 +127,8 @@ h2.title{border-bottom:1px solid #fafafa;font-size:18px;text-shadow:0 1px 0 #fff
 h2.title a{color:#345;}
 h2.title a:hover{color:#4a630f;}
 .entry{font-size:13px;overflow:hidden;padding:0 10px;}
+
+.entry .ad {margin-bottom: 25px; margin-right: 25px; text-align: center; float: left;}
 .entry ul,.entry ol{margin:0 30px 22px;}
 .entry li{line-height:22px;}
 .entry hr{display:block;margin:22px 0;}
@@ -248,6 +250,8 @@ padding-top: 5px;
 /* widget */
 #sidebar .widget input#s{width:190px;height:22px;line-height:22px;padding:0 5px;}
 #sidebar .widget input#searchsubmit{width:65px;}
+#sidebar .widget .ad { margin-bottom: 20px; text-align: center;}
+
 /* WP-RecentComments */
 
 #sidebar .recentcomments img.avatar{width:16px;height:16px;float:left;position:relative;border:1px solid #ddd;margin:0 5px 0 0;padding:1px;}
